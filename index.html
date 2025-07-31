@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suara Custom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Casda Iblis</h1>
+    <button id="playSound">Suara Casda</button>
+    <audio id="myAudio" src="suara.mp3"></audio>
+  </div>
+
+  <script>
+    const playButton = document.getElementById('playSound');
+    const audio = document.getElementById('myAudio');
+
+    playButton.addEventListener('click', () => {
+      audio.play();
+    });
+  </script>
+
+</body>
+</html>
